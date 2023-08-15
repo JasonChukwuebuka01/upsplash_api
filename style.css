@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&family=Edu+TAS+Beginner:wght@600&family=Noto+Sans+Nandinagari&family=Open+Sans&family=Pangolin&family=Roboto:wght@100&family=Ubuntu:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background:rgba(38, 20, 71,0.8);*/
+  background: whitesmoke;
+  font-family: "DynaPuff", cursive;
+}
+
+header {
+  border-bottom: 2px solid lightgrey;
+  background: #ff3864;
+}
+
+.container {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container h1 {
+  padding: 10px;
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.container nav {
+  width: 60%;
+  position: relative;
+  border-bottom: 2px solid lightgrey;
+}
+
+.container nav input {
+  padding: 10px 10px 5px 10px;
+  width: 90%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  background: none;
+  color: #000;
+  font-family: inherit;
+}
+
+input::placeholder {
+  color: #000;
+}
+
+.fa {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 1.5rem;
+}
+
+.grid {
+  width: 90%;
+  padding: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  transition: 1s;
+  overflow: scroll;
+}
+
+.gridElement {
+  width: 300px;
+  height: 300px;
+  margin: 4px;
+  outline: none;
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container h1 {
+    font-size: 2rem;
+  }
+  .grid {
+    max-height: 80vh;
+  }
+  .gridElement {
+    width: 48%;
+    height: 100px;
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: none;
+  }
+}
